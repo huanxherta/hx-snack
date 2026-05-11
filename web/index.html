@@ -716,14 +716,14 @@
     hxの偷吃
   </div>
   <ul class="nav-links">
-    <li><a href="#dashboard">Dashboard</a></li>
-    <li><a href="#children">Children</a></li>
-    <li><a href="#tunnels">Tunnels</a></li>
-    <li><a href="#tasks">Tasks</a></li>
+    <li><a href="#dashboard">仪表盘</a></li>
+    <li><a href="#children">子节点</a></li>
+    <li><a href="#tunnels">隧道</a></li>
+    <li><a href="#tasks">任务</a></li>
   </ul>
   <div class="nav-status">
     <div class="nav-status-dot"></div>
-    Mother Online
+    母体在线
   </div>
 </nav>
 
@@ -732,14 +732,14 @@
   <div class="hero-content">
     <div class="hero-badge">
       <span style="width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 6px var(--accent);"></span>
-      Distributed C2 Framework v0.1.0
+      分布式 C2 框架 v0.2.0
     </div>
     <h1 class="hero-title">
-      One <em>Mother</em>,<br>Infinite <em>Children</em>
+      一个<em>母体</em>，<br>无限<em>子节点</em>
     </h1>
     <p class="hero-subtitle">
-      From shadows we command. Silent threads weave across continents —
-      monitoring, tunneling, executing. A whisper becomes a storm.
+      从暗影中发号施令。无声的丝线横跨大陆——
+      监控、隧道、执行。低语终将化作风暴。
     </p>
     <div class="hero-actions">
       <a href="#" class="btn btn-primary" onclick="document.getElementById('deployModal').style.display='flex'">
@@ -747,22 +747,22 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#dashboard" class="btn btn-glass">
-        View Dashboard
+        查看仪表盘
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
       </a>
     </div>
     <div class="hero-stats" id="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-value">3</div>
-        <div class="hero-stat-label">ACTIVE CHILDREN</div>
+        <div class="hero-stat-label">活跃子节点</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-value">5</div>
-        <div class="hero-stat-label">ACTIVE TUNNELS</div>
+        <div class="hero-stat-label">活跃隧道</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-value">99.97%</div>
-        <div class="hero-stat-label">UPTIME</div>
+        <div class="hero-stat-label">运行时间</div>
       </div>
     </div>
   </div>
@@ -771,53 +771,53 @@
 <!-- Dashboard -->
 <section class="section" id="dashboard">
   <div class="section-header">
-    <div class="section-tag">╱ OVERVIEW</div>
-    <div class="section-title">System Dashboard</div>
-    <div class="section-desc">Real-time telemetry from all connected nodes</div>
+    <div class="section-tag">╱ 概览</div>
+    <div class="section-title">系统仪表盘</div>
+    <div class="section-desc">所有已连接节点的实时遥测数据</div>
   </div>
 
   <div class="dashboard-grid">
     <div class="card">
       <div class="card-icon">🖥</div>
-      <div class="card-title">CPU Usage</div>
-      <div class="card-desc">Aggregated across all children</div>
+      <div class="card-title">CPU 使用率</div>
+      <div class="card-desc">所有子节点汇总</div>
       <div class="card-stat">23.4<span class="card-stat-label">%</span></div>
       <div class="progress-bar"><div class="progress-fill" style="width:23.4%"></div></div>
     </div>
     <div class="card">
       <div class="card-icon">💾</div>
       <div class="card-title">Memory</div>
-      <div class="card-desc">Average cluster memory pressure</div>
+      <div class="card-desc">集群平均内存压力</div>
       <div class="card-stat">6.2<span class="card-stat-label">GB / 16GB</span></div>
       <div class="progress-bar"><div class="progress-fill" style="width:38.8%"></div></div>
     </div>
     <div class="card">
       <div class="card-icon">🌐</div>
-      <div class="card-title">Network I/O</div>
-      <div class="card-desc">Total ingress across all tunnels</div>
+      <div class="card-title">网络 I/O</div>
+      <div class="card-desc">所有隧道总入站流量</div>
       <div class="card-stat">142<span class="card-stat-label">MB/s</span></div>
       <div class="progress-bar"><div class="progress-fill" style="width:71%"></div></div>
     </div>
     <div class="card">
       <div class="card-icon">📡</div>
       <div class="card-title">Latency</div>
-      <div class="card-desc">Mother ↔ Child average ping</div>
+      <div class="card-desc">母体 ↔ 子节点平均延迟</div>
       <div class="card-stat">48<span class="card-stat-label">ms</span></div>
       <div class="progress-bar"><div class="progress-fill" style="width:16%"></div></div>
     </div>
     <div class="card">
       <div class="card-icon">⚡</div>
-      <div class="card-title">Tasks Running</div>
-      <div class="card-desc">Distributed across children</div>
-      <div class="card-stat">7<span class="card-stat-label">active</span></div>
-      <div style="margin-top:8px;font-size:0.7rem;color:rgba(245,245,245,0.3);">12 completed today</div>
+      <div class="card-title">运行中任务</div>
+      <div class="card-desc">分布在子节点上</div>
+      <div class="card-stat">7<span class="card-stat-label">活跃</span></div>
+      <div style="margin-top:8px;font-size:0.7rem;color:rgba(245,245,245,0.3);">12 今日已完成</div>
     </div>
     <div class="card">
       <div class="card-icon">🔒</div>
-      <div class="card-title">Tunnel Status</div>
-      <div class="card-desc">WS-based port forwards</div>
-      <div class="card-stat">5/5<span class="card-stat-label">healthy</span></div>
-      <div style="margin-top:8px;font-size:0.7rem;color:rgba(245,245,245,0.3);">0 failures last 24h</div>
+      <div class="card-title">隧道状态</div>
+      <div class="card-desc">基于WS的端口转发</div>
+      <div class="card-stat">5/5<span class="card-stat-label">健康</span></div>
+      <div style="margin-top:8px;font-size:0.7rem;color:rgba(245,245,245,0.3);">0 过去24小时故障</div>
     </div>
   </div>
 </section>
@@ -825,28 +825,28 @@
 <!-- Children -->
 <section class="section" id="children">
   <div class="section-header">
-    <div class="section-tag">╱ NODES</div>
-    <div class="section-title">Children</div>
-    <div class="section-desc">Connected sub-nodes deployed across the world</div>
+    <div class="section-tag">╱ 节点</div>
+    <div class="section-title">子节点</div>
+    <div class="section-desc">分布全球的已连接子节点</div>
   </div>
 
   <table class="child-table">
     <thead>
       <tr>
-        <th>NAME</th>
-        <th>LOCATION</th>
-        <th>STATUS</th>
+        <th>名称</th>
+        <th>位置</th>
+        <th>状态</th>
         <th>CPU</th>
-        <th>MEM</th>
-        <th>UPTIME</th>
-        <th>LATENCY</th>
+        <th>内存</th>
+        <th>运行时间</th>
+        <th>延迟</th>
       </tr>
     </thead>
     <tbody id="children-tbody">
       <tr class="child-row">
         <td><div class="child-name">sakura-01</div><div class="child-location">child-sakura</div></td>
-        <td><span class="child-location">Tokyo, JP</span></td>
-        <td><span class="status-badge status-online">Online</span></td>
+        <td><span class="child-location">东京, 日本</span></td>
+        <td><span class="status-badge status-online">在线</span></td>
         <td>12%</td>
         <td>1.2GB</td>
         <td>14d 6h</td>
@@ -854,8 +854,8 @@
       </tr>
       <tr class="child-row">
         <td><div class="child-name">nyx-02</div><div class="child-location">child-nyx</div></td>
-        <td><span class="child-location">Los Angeles, US</span></td>
-        <td><span class="status-badge status-online">Online</span></td>
+        <td><span class="child-location">洛杉矶, 美国</span></td>
+        <td><span class="status-badge status-online">在线</span></td>
         <td>8%</td>
         <td>0.9GB</td>
         <td>7d 12h</td>
@@ -863,8 +863,8 @@
       </tr>
       <tr class="child-row">
         <td><div class="child-name">luna-03</div><div class="child-location">child-luna</div></td>
-        <td><span class="child-location">Hong Kong, CN</span></td>
-        <td><span class="status-badge status-offline">Offline</span></td>
+        <td><span class="child-location">香港, 中国</span></td>
+        <td><span class="status-badge status-offline">离线</span></td>
         <td colspan="4" style="color:rgba(245,245,245,0.1);">—</td>
       </tr>
     </tbody>
@@ -874,9 +874,9 @@
 <!-- Tunnels -->
 <section class="section" id="tunnels">
   <div class="section-header">
-    <div class="section-tag">╱ TUNNELS</div>
-    <div class="section-title">Active Tunnels</div>
-    <div class="section-desc">WebSocket-based port forwarding from Mother to Children</div>
+    <div class="section-tag">╱ 隧道</div>
+    <div class="section-title">活跃隧道</div>
+    <div class="section-desc">基于WebSocket的母体到子节点端口转发</div>
   </div>
 
   <div class="tunnel-list" id="tunnels-list">
@@ -918,27 +918,27 @@
         <div class="tunnel-name">luna-api</div>
         <div class="tunnel-detail">Mother:9080 → luna-03:3000</div>
       </div>
-      <div class="tunnel-traffic" style="color:rgba(245,245,245,0.2);">disconnected</div>
+      <div class="tunnel-traffic" style="color:rgba(245,245,245,0.2);">已断开</div>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
 <div class="footer">
-  hxの偷吃 · Mother Node · All children report. All tunnels hold. All is well.
+  hxの偷吃 · Mother Node · 所有子节点在线。所有隧道稳固。一切安好。
 </div>
 
 <!-- Deploy Modal -->
 <div class="modal-overlay" id="deployModal" style="display:none;" onclick="if(event.target===this)this.style.display='none'">
   <div class="modal">
-    <div class="modal-title">Deploy Child Node</div>
-    <div class="modal-desc">Run this command on any Linux VPS to join the swarm. The child will auto-register with this Mother.</div>
+    <div class="modal-title">部署子节点</div>
+    <div class="modal-desc">在任何Linux VPS上运行此命令即可加入集群。子节点会自动注册到此母体。</div>
     <input class="modal-input" readonly
       value="curl -sL https://gh.hx.dev/hx-snack/install.sh | bash -s -- --mother wss://bpb.0d000721.cv/ws --key ********"
       onclick="this.select()">
     <div style="display:flex;gap:12px;justify-content:flex-end;">
-      <button class="btn btn-glass" onclick="document.getElementById('deployModal').style.display='none'">Close</button>
-      <button class="btn btn-primary" onclick="navigator.clipboard.writeText(document.querySelector('.modal-input').value);this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)">Copy</button>
+      <button class="btn btn-glass" onclick="document.getElementById('deployModal').style.display='none'">关闭</button>
+      <button class="btn btn-primary" onclick="navigator.clipboard.writeText(document.querySelector('.modal-input').value);this.textContent='已复制!';setTimeout(()=>this.textContent='Copy',2000)">复制</button>
     </div>
   </div>
 </div>
@@ -996,9 +996,9 @@ function renderStats(data) {
   const el = document.getElementById('hero-stats');
   if (!el) return;
   el.innerHTML = `
-    <div class="hero-stat"><div class="hero-stat-value">${data.children || 0}</div><div class="hero-stat-label">ACTIVE CHILDREN</div></div>
-    <div class="hero-stat"><div class="hero-stat-value">${data.tunnels || 0}</div><div class="hero-stat-label">ACTIVE TUNNELS</div></div>
-    <div class="hero-stat"><div class="hero-stat-value">${data.tasks_completed || 0}</div><div class="hero-stat-label">TASKS DONE</div></div>
+    <div class="hero-stat"><div class="hero-stat-value">${data.children || 0}</div><div class="hero-stat-label">活跃子节点</div></div>
+    <div class="hero-stat"><div class="hero-stat-value">${data.tunnels || 0}</div><div class="hero-stat-label">活跃隧道</div></div>
+    <div class="hero-stat"><div class="hero-stat-value">${data.tasks_completed || 0}</div><div class="hero-stat-label">已完成任务</div></div>
   `;
 }
 
@@ -1007,7 +1007,7 @@ function renderChildren(children) {
   if (!tbody) return;
 
   if (!children || children.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="7" style="color:rgba(245,245,245,0.2);padding:24px;text-align:center;">No children connected. Deploy one!</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="7" style="color:rgba(245,245,245,0.2);padding:24px;text-align:center;">暂无子节点连接。快去部署一个吧！</td></tr>`;
     return;
   }
 
@@ -1015,11 +1015,11 @@ function renderChildren(children) {
     <tr class="child-row">
       <td><div class="child-name">${esc(c.hostname || c.id)}</div><div class="child-location">${c.id}</div></td>
       <td><span class="child-location">${c.os || '?'} / ${c.arch || '?'}</span></td>
-      <td><span class="status-badge status-online">Online</span></td>
+      <td><span class="status-badge status-online">在线</span></td>
       <td>${c.cpu ? c.cpu.toFixed(1)+'%' : '—'}</td>
       <td>${c.mem_used ? formatBytes(c.mem_used)+' / '+formatBytes(c.mem_total) : '—'}</td>
       <td>${fmtUptime(c.uptime)}</td>
-      <td style="font-size:0.75rem;color:var(--pink);">✦ online</td>
+      <td style="font-size:0.75rem;color:var(--pink);">✦ 在线</td>
     </tr>
   `).join('');
 }
@@ -1029,7 +1029,7 @@ function renderTunnels(tunnels) {
   if (!el) return;
 
   if (!tunnels || tunnels.length === 0) {
-    el.innerHTML = `<div style="color:rgba(245,245,245,0.2);padding:24px;text-align:center;grid-column:span 2;">No active tunnels</div>`;
+    el.innerHTML = `<div style="color:rgba(245,245,245,0.2);padding:24px;text-align:center;grid-column:span 2;">暂无活跃隧道</div>`;
     return;
   }
 
@@ -1053,10 +1053,10 @@ function renderDashboardGrid(stats) {
   }
   if (cards.length >= 5) {
     cards[4].querySelector('.card-stat').innerHTML = stats.tasks_total || 0;
-    cards[4].querySelector('.card-desc').textContent = `${stats.tasks_completed || 0} completed`;
+    cards[4].querySelector('.card-desc').textContent = `${stats.tasks_completed || 0} 已完成`;
   }
   if (cards.length >= 6) {
-    cards[5].querySelector('.card-stat').innerHTML = `${stats.tunnels || 0}/${stats.tunnels || 0} <span class="card-stat-label">healthy</span>`;
+    cards[5].querySelector('.card-stat').innerHTML = `${stats.tunnels || 0}/${stats.tunnels || 0} <span class="card-stat-label">健康</span>`;
   }
 }
 
@@ -1087,7 +1087,7 @@ async function refresh() {
     // Footer
     const footer = document.querySelector('.footer');
     if (footer) {
-      footer.textContent = `hxの偷吃 · ${stats.children || 0} children · ${stats.tunnels || 0} tunnels · ${stats.tasks_completed || 0} tasks done`;
+      footer.textContent = `hxの偷吃 · ${stats.children || 0} 个子节点 · ${stats.tunnels || 0} 个隧道 · ${stats.tasks_completed || 0} 个任务已完成`;
     }
 
   } catch (err) {
@@ -1095,7 +1095,7 @@ async function refresh() {
       console.warn('[webui] refresh error:', err.message);
       lastError = err.message;
       const footer = document.querySelector('.footer');
-      if (footer) footer.textContent = 'hxの偷吃 · Mother offline — API unreachable';
+      if (footer) footer.textContent = 'hxの偷吃 · 母体离线 — API无法访问';
     }
   }
 }
